@@ -53,7 +53,7 @@ void setWindowHints()
 
 GLFWwindow* createWindow()
 {
-	GLFWwindow* window = glfwCreateWindow(800, 600, "TEST : conan_learn", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(800, 600, "Learn : CMake and Conan", nullptr, nullptr);
 
 	if (!window)
 	{
@@ -181,8 +181,6 @@ void cleanup(unsigned int vao, unsigned int vbo)
 
 int main()
 {
-	std::cout << "TEST : conan_learn" << std::endl;
-
 	initGlfw();
 	setWindowHints();
 	GLFWwindow* window = createWindow();
