@@ -21,9 +21,9 @@ const char* fragmentShaderSource = "#version 330 core\n"
 "}\n\0";
 
 const float vertices[] = {
-    -0.5f, -0.5f, 0.0f, // left  
-     0.5f, -0.5f, 0.0f, // right 
-     0.0f,  0.5f, 0.0f  // top   
+    -0.5f, -0.5f, 0.0f, // left
+     0.5f, -0.5f, 0.0f, // right
+     0.0f,  0.5f, 0.0f  // top
 };
 
 bool initGlfw()
@@ -42,8 +42,8 @@ bool initGlfw()
 
 void setWindowHints()
 {
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 #ifdef __APPLE__
